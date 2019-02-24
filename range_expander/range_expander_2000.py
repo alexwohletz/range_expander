@@ -6,6 +6,14 @@ Created on Fri Jan 25 19:20:28 2019
 """
 
 def expand_ranges(row):
+     """Function to expand procedurecode ranges from begin procedure code to end procedurecode.
+
+    Args:
+        row (tuple,list): A row with a begin code in the first position and end code in the second position.
+
+    Returns:
+        list: A list of codes from the start code specified to the end.
+    """
     rang = row
     
     assert len(str(rang[0])) and len(str(rang[1])) == 5, "Bad code length"
